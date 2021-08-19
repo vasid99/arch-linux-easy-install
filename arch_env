@@ -1,0 +1,20 @@
+
+# installation partitions (strictly provide absolute paths)
+PART_LGCY="/dev/sda1"
+PART_UEFI=""
+PART_ARCH="/dev/sda3"
+PART_ARCH_MNTPT="/mnt"
+
+# base packages; no need to modify
+TEXT_EDITORS="vim nano"
+WIFI_TOOLS="iw iwd"
+MAN_PACKAGES="man-db man-pages texinfo"
+BASE_PACKAGES="base linux-firmware linux grub sudo $TEXT_EDITORS $WIFI_TOOLS $MAN_PACKAGES"
+
+# extra packages; add other packages here (sample below installs a GUI environment)
+#EXTRA_PACKAGES="xorg xf86-video-intel xorg-xinit xfce4 lightdm lightdm-gtk-greeter"
+
+# other information
+ZONEINFO="/usr/share/zoneinfo/Asia/Kolkata"
+HOSTNAME="arch-acript-test"
+USERNAME="archman"

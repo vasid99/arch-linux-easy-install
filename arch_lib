@@ -1,0 +1,21 @@
+function part_exists () {
+        GREPOUT=$(lsblk -p|grep $1)
+        echo $GREPOUT
+}
+
+function get_disk () {
+        SEDOUT=$(echo $1|sed -n "s@\(.*[^0-9]\)[0-9]*@\1@p")
+        if [ -z "$SEDOUT" ];then
+                echo Fatal error: invalid partition name $1, exiting
+                return
+        else
+                echo $SEDOUT
+        fi
+}
+
+function part_type () {
+        GREPOUT=$(fdisk -l $(get_disk $1)|grep $1|sed "s@[^ ]* *[^ ]* *[^ ]* *[^ ]* *[^ ]* *\(.*\)@\1@")
+        echo $GREPOUT
+}
+
+LOCALE_DEFAULT="en_US.UTF-8 UTF-8"
