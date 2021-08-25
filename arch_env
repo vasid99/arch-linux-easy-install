@@ -16,5 +16,5 @@ BASE_PACKAGES="base linux-firmware linux grub sudo $TEXT_EDITORS $WIFI_TOOLS $MA
 
 # other information
 ZONEINFO="/usr/share/zoneinfo/Asia/Kolkata"
-HOSTNAME="arch-acript-test"
+HOSTNAME="arch-script-test"
 USERNAME="archman"

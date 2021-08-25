@@ -96,7 +96,7 @@ if [ -z "$bl" ];then
 	echo
 fi
 
-# Locale variable check (default locale in arch_env file)
+# Locale variable check (default locale in arch_lib file)
 if [ -z "$LOCALE" ];then
 	echo Warning: locale has not been provided. Check /etc/locale.gen for available locales and specify your preferred one. If not provided, $LOCALE_DEFAULT will be installed by default.
 	echo
