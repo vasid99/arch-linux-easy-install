@@ -1,7 +1,6 @@
-
 # installation partitions (strictly provide absolute paths)
-PART_LGCY="/dev/sda1"
-PART_UEFI=""
+PART_LGCY=""
+PART_UEFI="/dev/sda1"
 ESP_ARCH_CHROOT="/efi"
 PART_ARCH="/dev/sda3"
 PART_ARCH_MNTPT="/mnt"
@@ -21,5 +20,5 @@ X_PACKAGES="xorg xf86-video-intel xorg-xinit"
 
 # other information
 ZONEINFO="/usr/share/zoneinfo/Asia/Kolkata"
-HOSTNAME="arch-script-test"
+HOSTNAME="arch-host"
 USERNAME="archman"

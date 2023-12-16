@@ -14,7 +14,7 @@ I would also explicitly like to mention that though I find the whole process ted
 ## Usage
 - Copy/Download the repo into your live USB
 - Edit the configuration in `arch_env` to your liking
-- Once done, run `source arch_runme.sh` in the booted live USB
+- Once done, run `./arch_runme.sh` in the booted live USB
 - After installation is complete:
 	- reboot and login
 	- enable `systemd-networkd`, `systemd-resolved`, `iwd` and `lightdm` services (`systemctl enable <services>`)

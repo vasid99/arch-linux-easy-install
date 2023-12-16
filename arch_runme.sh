@@ -1,4 +1,6 @@
 #!/usr/bin/bash
+set -e
+
 # basically library includes
 source arch_env
 source arch_lib
